@@ -1,7 +1,36 @@
-# supercell_generator
-Given a direct matrix lattice vectors, this program creates supercell candidates for which the lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
+# `supercell_generator.py`
+Given a direct matrix lattice vectors, this program creates supercell matrix candidates for which the lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
 
-This allows to construct supercells for different poymorphs with lattice paramenters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius
+This allows to construct supercells for different poymorphs with lattice parameters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius.
+
+# Why is this important ?
+Let's consider this example:
+
+Calcite I is a trigonal crystal, where the primitive cell is trigonal, and the crystallographic is hexagonal. This is the direct lattice vectors matrix for the primitive cell:
+
+```
+ DIRECT LATTICE VECTORS CARTESIAN COMPONENTS (ANGSTROM)
+          X                    Y                    Z
+   0.288155519353E+01   0.000000000000E+00   0.568733333333E+01
+  -0.144077759676E+01   0.249550000000E+01   0.568733333333E+01
+  -0.144077759676E+01  -0.249550000000E+01   0.568733333333E+01
+```
+Which would be an adequate supercell that would produce `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom?
+
+Well, in this case, the following supercell:
+
+```
+2 0 0
+0 2 0
+0 0 2
+```
+will produce the following:
+
+`a1_SC = a2_SC = a3_SC = 12.88458   12.88458   12.88458`
+
+This was a simple case. Now, consider Aragonite, in which the primitive cell is orthorombic, and the direct lattice vectors matrix is:
+
+
 
 
 Given the matrices `{aij}`, `{Eij}` and `{aij_SC}`, it is satisfied that:
