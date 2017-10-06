@@ -18,17 +18,19 @@ where `x` stands for a standard matrix multiplication (rows, columns).
 
 1) Each element of `{aij}` matrix is known:
 
-``` a1x = 0.288155519353E+01
-    a1y = 0.000000000000E+00
-    a1z = 0.568733333333E+01
+``` 
+a1x = 0.288155519353E+01
+a1y = 0.000000000000E+00
+a1z = 0.568733333333E+01
     
-    a2x = -0.144077759676E+01             # Eqns(1)
-    a2y = 0.249550000000E+01
-    a2z = 0.568733333333E+01
+a2x = -0.144077759676E+01             # Eqns(1)
+a2y = 0.249550000000E+01
+a2z = 0.568733333333E+01
     
-    a3x = -0.144077759676E+01
-    a3y = -0.249550000000E+01
-    a3z = 0.568733333333E+01```
+a3x = -0.144077759676E+01
+a3y = -0.249550000000E+01
+a3z = 0.568733333333E+01
+```
 
 2) Each element of `{Eij}` is a list of possible integer values, the same for each element:
 
