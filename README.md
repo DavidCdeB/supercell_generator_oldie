@@ -18,7 +18,7 @@ Given the matrices `{aij}`, `{Eij}` and `{aij_SC}`, it is satisfied that:
 
 where `x` stands for a standard matrix multiplication (rows, columns).
 
-1) Each element of `{aij}` matrix is known:
+**1)** Each element of `{aij}` matrix is known:
 
 ``` 
 a1x = 0.288155519353E+01
@@ -34,7 +34,7 @@ a3y = -0.249550000000E+01
 a3z = 0.568733333333E+01
 ```
 
-2) Each element of `{Eij}` is a list of possible integer values, the same for each element:
+**2)** Each element of `{Eij}` is a list of possible integer values, the same for each element:
 
 ```
 E11 = [0, 1, 2, -1, -2]
@@ -50,7 +50,7 @@ E32 = [0, 1, 2, -1, -2]
 E33 = [0, 1, 2, -1, -2]
 ```
 
-3) `a1_SC`, `a2_SC` and `a3_SC` are calculated in the following way:
+**3)** `a1_SC`, `a2_SC` and `a3_SC` are calculated in the following way:
 
 ```
 a1_SC =  (a1x_SC**2 + a1y_SC**2 + a1z_SC**2)**(0.5)
