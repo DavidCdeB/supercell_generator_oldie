@@ -233,7 +233,7 @@ Code:
 
 
 
-  [1]: https://i.stack.imgur.com/kqzaf.png
+  [1]:  https://github.com/DavidCdeB/supercell_generator/blob/master/67.png
 
 
 
