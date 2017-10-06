@@ -34,23 +34,27 @@ a3z = 0.568733333333E+01
 
 2) Each element of `{Eij}` is a list of possible integer values, the same for each element:
 
-    E11 = [0, 1, 2, -1, -2]
-    E12 = [0, 1, 2, -1, -2]
-    E13 = [0, 1, 2, -1, -2]
+```
+E11 = [0, 1, 2, -1, -2]
+E12 = [0, 1, 2, -1, -2]
+E13 = [0, 1, 2, -1, -2]
     
-    E21 = [0, 1, 2, -1, -2]              
-    E22 = [0, 1, 2, -1, -2]              # Eqns(2)
-    E23 = [0, 1, 2, -1, -2]
+E21 = [0, 1, 2, -1, -2]              
+E22 = [0, 1, 2, -1, -2]              # Eqns(2)
+E23 = [0, 1, 2, -1, -2]
     
-    E31 = [0, 1, 2, -1, -2]
-    E32 = [0, 1, 2, -1, -2]
-    E33 = [0, 1, 2, -1, -2]
+E31 = [0, 1, 2, -1, -2]
+E32 = [0, 1, 2, -1, -2]
+E33 = [0, 1, 2, -1, -2]
+```
 
 3) `a1_SC`, `a2_SC` and `a3_SC` are calculated in the following way:
 
-    a1_SC =  (a1x_SC**2 + a1y_SC**2 + a1z_SC**2)**(0.5)
-    a2_SC =  (a2x_SC**2 + a2y_SC**2 + a2z_SC**2)**(0.5)    # Eqns(3)
-    a3_SC =  (a3x_SC**2 + a3y_SC**2 + a3z_SC**2)**(0.5)
+```
+a1_SC =  (a1x_SC**2 + a1y_SC**2 + a1z_SC**2)**(0.5)
+a2_SC =  (a2x_SC**2 + a2y_SC**2 + a2z_SC**2)**(0.5)    # Eqns(3)
+a3_SC =  (a3x_SC**2 + a3y_SC**2 + a3z_SC**2)**(0.5)
+```
 
 I would like to brute force loop over all possible `Eij` values (Eqns(2)) so that I can find those `Eij` for which:
 
