@@ -1,5 +1,7 @@
 # supercell_generator
-Given a direct matrix lattice vectors, this program creates supercell candidates for which the lattice parameters are smaller than a tolerance, and the three of them of the same size, within a tolerance
+Given a direct matrix lattice vectors, this program creates supercell candidates for which the lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
+
+This allows to construct supercells for different poymorphs with lattice paramenters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius
 
 
 Given the matrices `{aij}`, `{Eij}` and `{aij_SC}`, it is satisfied that:
