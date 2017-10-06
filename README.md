@@ -18,7 +18,7 @@ where `x` stands for a standard matrix multiplication (rows, columns).
 
 1) Each element of `{aij}` matrix is known:
 
-```    a1x = 0.288155519353E+01
+``` a1x = 0.288155519353E+01
     a1y = 0.000000000000E+00
     a1z = 0.568733333333E+01
     
