@@ -15,7 +15,7 @@ Calcite I is a trigonal crystal, where the primitive cell is trigonal, and the c
   -0.144077759676E+01   0.249550000000E+01   0.568733333333E+01
   -0.144077759676E+01  -0.249550000000E+01   0.568733333333E+01
 ```
-Which would be an adequate supercell that would produce `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom?
+Which would be an adequate supercell that would produce the three lattice parameters `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom?
 
 Well, in this case, the following supercell:
 
@@ -47,7 +47,7 @@ In this case it is not so straightforward Which would be the minimum volume supe
 
 that will produce the following:
 
-`a1_SC = a2_SC = a3_SC = 11.00396   11.00396   11.00396`. This supercell is not that easy to sort it out... The goal of this program is to sort out this supercell.
+`a1_SC = a2_SC = a3_SC = 11.00396   11.00396   11.00396`. This supercell is not that easy to sort it out... The goal of this program is to sort out this supercell for any given direct lattice matrix vectors.
 
 # Statement of the problem
 
