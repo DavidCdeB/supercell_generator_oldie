@@ -37,7 +37,7 @@ This was a simple case. Now, consider Aragonite, in which the primitive cell is 
    0.000000000000E+00   0.797050000000E+01   0.000000000000E+00
    0.000000000000E+00   0.000000000000E+00   0.573940000000E+01
 ```
-In this case it is not so straightforward Which would be the minimum volume supercell that would produce `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom. It is this following supercell:
+In this case it is not so straightforward which would be the minimum volume supercell that would produce `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom. It is this following supercell:
 
 ```
 -1   1  -1
@@ -172,7 +172,7 @@ but this would not be considering all the possible combinations, because for a g
 
       a1x_SC = e11 * a1x + E12[0] * a2x + E13[0:-1] * a3x
 
-How could achieve this goal? 
+How could we achieve this goal? 
 
 The final result would be to save in a file the candidates that satisfy Eq. 67 in this way:
 
