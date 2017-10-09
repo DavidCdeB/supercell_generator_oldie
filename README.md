@@ -1,7 +1,7 @@
 # `supercell_generator.py`
-Given a direct matrix lattice vectors, this program creates supercell matrix candidates for which the lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
+Given a direct matrix lattice vectors, this program creates a set of supercell matrix candidates for which the new lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
 
-This allows to construct supercells for different poymorphs with lattice parameters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius.
+This allows to construct supercells for different polymorphs with lattice parameters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius.
 
 # Why is this important ?
 Let's consider this example:
@@ -30,8 +30,26 @@ will produce the following:
 
 This was a simple case. Now, consider Aragonite, in which the primitive cell is orthorombic, and the direct lattice vectors matrix is:
 
+ ```
+ DIRECT LATTICE VECTORS CARTESIAN COMPONENTS (ANGSTROM)
+          X                    Y                    Z
+   0.496160000000E+01   0.000000000000E+00   0.000000000000E+00
+   0.000000000000E+00   0.797050000000E+01   0.000000000000E+00
+   0.000000000000E+00   0.000000000000E+00   0.573940000000E+01
+```
+In this case it is not so straightforward Which would be the minimum volume supercell that would produce `a1_SC`, `a2_SC` and `a3_SC` approximately equal and greater than 10 Angstrom. It is this following supercell:
 
+```
+-1   1  -1
+-1  -1   1
+-1  -1  -1
+```
 
+that will produce the following:
+
+`a1_SC = a2_SC = a3_SC = 11.00396   11.00396   11.00396`. This supercell is not that easy to sort it out... The goal of this program is to sort out this supercell.
+
+# Statement of the problem
 
 Given the matrices `{aij}`, `{Eij}` and `{aij_SC}`, it is satisfied that:
 
