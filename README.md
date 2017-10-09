@@ -1,5 +1,5 @@
 # `supercell_generator.py`
-Given a direct matrix lattice vectors, this program creates a set of supercell matrix candidates for which the new lattice parameters are smaller than a chosen value, and the three of them of the same size, within a tolerance.
+Given a direct matrix lattice vectors, this program creates a set of supercell matrix candidates for which the new lattice parameters (`a1_SC`, `a2_SC`, `a3_SC`) are greater than a chosen value, and the three of them of the same size, within a tolerance.
 
 This allows to construct supercells for different polymorphs with lattice parameters of equal legth, so that we ensure phonons are calculated within a "sphere" of equal radius.
 
