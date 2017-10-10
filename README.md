@@ -53,17 +53,22 @@ that will produce the following:
 
 Given the matrices `{aij}`, `{Eij}` and `{aij_SC}`, it is satisfied that:
 
-
-    #  |a1x a1y  a1z|          |E11 E12  E13|        |a1x_SC a1y_SC  a1z_SC|     
-    #  |a2x a2y  a2z|    x     |E21 E22  E23|     =  |a2x_SC a2y_SC  a2z_SC|
-    #  |a3x a3y  a3z|          |E31 E32  E33|        |a3x_SC a3y_SC  a3z_SC|
-    # \--------------/        \--------------/      \-----------------------/ 
-    #   {aij} matrix            {Eij} matrix           {aij_SC} matrix
-    #  (i=1,2,3; j=x,y,z)       (i,j=1,2,3)            (i=1,2,3; j=x_SC,y_SC,z_SC) 
-    #   Known                   
+```
+  |a1x_SC a1y_SC  a1z_SC|           |E11 E12  E13|           |a1x a1y  a1z|  
+  |a2x_SC a2y_SC  a2z_SC|   =       |E21 E22  E23|     x     |a2x a2y  a2z|    
+  |a3x_SC a3y_SC  a3z_SC|           |E31 E32  E33|           |a3x a3y  a3z|  
+ \-----------------------/         \--------------/         \--------------/  
+    {aij_SC} matrix                  {Eij} matrix             {aij} matrix
+    (i=1,2,3; j=x_SC,y_SC,z_SC)      (i,j=1,2,3)             (i=1,2,3; j=x,y,z)
+                                                                Known
+```
 
 
 where `x` stands for a standard matrix multiplication (rows, columns).
+
+In other words:
+
+
 
 **1)** Each element of `{aij}` matrix is known:
 
