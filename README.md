@@ -68,7 +68,9 @@ where `x` stands for a standard matrix multiplication (rows, columns).
 
 In other words:
 
+[![enter image description here][2]][2]
 
+[![enter image description here][3]][3]
 
 **1)** Each element of `{aij}` matrix is known:
 
@@ -199,5 +201,7 @@ Code: [supercell_generator.py](https://github.com/DavidCdeB/supercell_generator/
 
   [1]:  https://github.com/DavidCdeB/supercell_generator/blob/master/67.png
 
-
+  [2]:  https://github.com/DavidCdeB/supercell_generator/blob/master/65.png
+  
+  [2]:  https://github.com/DavidCdeB/supercell_generator/blob/master/64.png
 
