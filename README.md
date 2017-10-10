@@ -203,5 +203,5 @@ Code: [supercell_generator.py](https://github.com/DavidCdeB/supercell_generator/
 
   [2]:  https://github.com/DavidCdeB/supercell_generator/blob/master/65.png
   
-  [2]:  https://github.com/DavidCdeB/supercell_generator/blob/master/64.png
+  [3]:  https://github.com/DavidCdeB/supercell_generator/blob/master/64.png
 
