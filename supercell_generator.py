@@ -69,11 +69,12 @@ a3x_SC = E31 * a1x + E32 * a2x + E33 * a3x
 a3y_SC = E31 * a1y + E32 * a2y + E33 * a3y
 a3z_SC = E31 * a1z + E32 * a2z + E33 * a3z
 
+# Lattice vectors of the supercell generated:
 a1_SC =  (a1x_SC**2 + a1y_SC**2 + a1z_SC**2)**(0.5)
 a2_SC =  (a2x_SC**2 + a2y_SC**2 + a2z_SC**2)**(0.5)
 a3_SC =  (a3x_SC**2 + a3y_SC**2 + a3z_SC**2)**(0.5)
 
-
+# a1_SC, a2_SC, a3_SC to be equal (within a small tolerance, 0.001) and to be greater than 10:
 def tolerance(a1_SC, a2_SC, a3_SC):
     tol_1 = 10
     tol_2 = 0.001
@@ -84,6 +85,7 @@ def tolerance(a1_SC, a2_SC, a3_SC):
            and abs(a1_SC - a3_SC) < tol_2\
            and abs(a2_SC - a3_SC) < tol_2
 
+# Looping over the matrix elements -> This procedure has the problems commented in the README file...            
 for e11 in E11:
   a1x_SC = e11 * a1x + E12[0] * a2x + E13[0] * a3x
   a1y_SC = e11 * a1y + E12[0] * a2y + E13[0] * a3y
